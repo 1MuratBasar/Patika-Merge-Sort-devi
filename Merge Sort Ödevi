@@ -1,0 +1,24 @@
+Proje 2
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+Cevaplar:
+[16,21,11,8,12,22] --- Dizi tek bir eleman kalana kadar ikiye bölnüür
+
+   [16,21,11] <-----------> [8,12,22]  1. aşama
+
+[16,21]<-->[11] <--------> [8,12]<--->[22] 2. aşama 
+
+[16]<-->[21]--[11] <------> [8]<-->[12]--[22] 3. aşama (bütün elemanlar tek kaldı. artık birleştiriyoruz ve birleştirirken sıralama yapıyoruz )
+
+[16,21]--[11] <------> [8,12]--[22]  4. aşama tekrar birleştirirken ilk 2 kendi arasında sıralam yapılıyor. tek kalan olduğu gibi yazılıyor sonraki aşamada sıralamaya girecek
+
+[11,16,21] <----> [8,12,22] 5. aşama kendi aralarında sıralandı sonraki aşamada hepsi birleşip kendi aralarında sıralama yapılacak
+
+[8,11,12,16,21,22] 6 .aşama tüm hepsi sıralandı
+
+her seferinde n-1 adet sorgulama yapıyor. Big O notition = O(nlogn) ---> 2^x = n ve logn= x 
+
+
